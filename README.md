@@ -47,52 +47,55 @@ MIDAS simulates a financial transaction processing service capable of:
 
 ## Tasks Completed
 
-### Task 1 — Project Setup
+### Task 1 – Project Setup
 
-- Configured Java 17 development environment
-- Set up Spring Boot project
-- Installed required dependencies
-- Verified project using automated tests
+**What I did**
+- Set up the Java 17 development environment.
+- Configured the Spring Boot project using Maven.
+- Added the required dependencies and verified the project setup by running the provided tests.
 
----
-
-### Task 2 — Kafka Integration
-
-Implemented a Kafka consumer that:
-
-- Listens to transaction events
-- Deserializes incoming transaction messages
-- Integrates with the existing Spring Boot application
-- Verified functionality using embedded Kafka tests
+**What I learned**
+This task helped me understand how enterprise Java projects are structured and how Spring Boot applications are configured before development begins.
 
 ---
 
-### Task 3 — Database Integration
+### Task 2 – Kafka Integration
 
-Integrated H2 with Spring Data JPA by:
+**What I did**
+- Implemented a Kafka listener to consume transaction messages.
+- Deserialized incoming messages into Java objects.
+- Verified the integration using embedded Kafka tests.
 
-- Creating transaction entities
-- Validating financial transactions
-- Updating sender and recipient balances
-- Persisting successful transactions
-- Rejecting invalid transactions
+**What I learned**
+I learned how event-driven systems use message queues to process requests asynchronously and how different services can communicate without being tightly coupled.
 
 ---
 
-### Task 4 — REST API Integration
+### Task 3 – H2 Database Integration
 
-Connected the application to an external Incentive API by:
+**What I did**
+- Integrated an H2 in-memory database using Spring Data JPA.
+- Created entities to store transaction records.
+- Implemented transaction validation and updated account balances after successful transactions.
 
-- Sending transaction data using REST
-- Receiving incentive responses
-- Applying incentives to recipient accounts
-- Updating transaction records accordingly
+**What I learned**
+This task gave me practical experience with database persistence, entity relationships, and enforcing business rules before writing data to a database.
+
+---
+
+### Task 4 – REST API Integration
+
+**What I did**
+- Connected the application to an external Incentive API.
+- Sent transaction data using REST requests.
+- Processed incentive responses and updated recipient balances accordingly.
+
+**What I learned**
+I learned how backend services communicate through APIs, why service boundaries are important, and how external services can be integrated into an existing transaction workflow without changing the overall system design.
 
 ---
 
 ## Learning Outcomes
-
-Through this project, I gained practical experience with:
 
 - Enterprise backend architecture
 - Event-driven systems
